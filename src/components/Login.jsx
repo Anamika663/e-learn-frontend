@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import loginImg from '../assets/Login.jpg';
 
 export default function Login() {
+
+  const validateLogin = function(){
+    
+  }
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
       <div className='relative hidden sm:block'>
