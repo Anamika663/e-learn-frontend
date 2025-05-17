@@ -8,7 +8,7 @@ export default function Login() {
       <div className='relative hidden sm:block'>
         <img className='w-full h-full object-cover' src={loginImg} alt="Login" />
         <div className="absolute top-1/2 right-4 transform -translate-y-1/2 text-right text-white">
-          <h2 className='text-6xl font-bold'>Welcome</h2>
+          <h2 className='text-7xl font-bold'>Welcome</h2>
           <p className='text-lg mt-2'>Log in to continue...</p>
         </div>
       </div>
