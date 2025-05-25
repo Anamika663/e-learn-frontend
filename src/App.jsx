@@ -1,12 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import ScrollToTop from './components/ScrollToTop';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Login from './components/Login';
-import Signup from './components/Signup';
 
+import Home from './pages/Home';
+import About from './pages/About';
+import Roadmap from './pages/Roadmap';
+import ProblemPractice from './pages/ProblemPractice';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+
+// Component to wrap and conditionally render layout
 function LayoutWrapper() {
   const location = useLocation();
   const hideLayout = location.pathname === '/login' || location.pathname === '/signup';
@@ -17,15 +24,17 @@ function LayoutWrapper() {
 
       {!hideLayout && <NavBar />}
 
-      <main className={`flex flex-col min-h-screen bg-gray-900 text-white ${!hideLayout ? 'pt-[64px]' : ''}`}>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/" element={<div className="p-6">Home Page</div>} />
-          <Route path="/about" element={<div className="p-6">About Page</div>} />
-        </Routes>
-
-        {!hideLayout && <div className="flex-grow" />}
+      <main className={`pt-[64px] min-h-screen bg-gray-900 text-white`}>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/roadmap" element={<Roadmap />} />
+            <Route path="/playlist" element={<ProblemPractice />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </AnimatePresence>
       </main>
 
       {!hideLayout && <Footer />}
