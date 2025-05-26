@@ -10,9 +10,10 @@ export default function Roadmap() {
         <ul className="space-y-2">
           <li><a href="/roadmap/html" className="hover:text-white">HTML Basics</a></li>
           <li><a href="/roadmap/css" className="hover:text-white">CSS Basics</a></li>
-          <li><a href="/roadmap/fronend" className="hover:text-white">frontend web dev</a></li>
+          <li><a href="/roadmap/frontend" className="hover:text-white">frontend web dev</a></li>
           <li><a href="/roadmap/backend" className="hover:text-white">Backend web dev</a></li>
           <li><a href="/roadmap/DSA" className="hover:text-white">DSA</a></li>
+           <li><a href="/roadmap/Webdev" className="hover:text-white">Webdev</a></li>
         </ul>
       </aside>
 

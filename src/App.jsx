@@ -13,8 +13,9 @@ import ProblemPractice from './pages/ProblemPractice';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dsa from './roadmapPages/Dsa';
-import Fronendwebdev from './roadmapPages/fronendwebdev';
+import Frontendwebdev from './roadmapPages/frontendwebdev';
 import Backendwebdev from './roadmapPages/backendwebdev';
+import Webdev from './roadmapPages/Webdev';
 import Html from './roadmapPages/html';
 import CSS from './roadmapPages/CSS';
 import DSA from './PPpages/Dsa';
@@ -47,8 +48,10 @@ function LayoutWrapper() {
             <Route path="/roadmap/html" element={<Html />} />
             <Route path="/roadmap/css" element={<CSS />} />
             <Route path="/roadmap/DSA" element={<Dsa />} />
-            <Route path="/roadmap/fronend" element={<Fronendwebdev/>} />
+            <Route path="/roadmap/frontend" element={<Frontendwebdev/>} />
             <Route path="/roadmap/backend" element={<Backendwebdev />} />
+            <Route path="/roadmap/Webdev" element={<Webdev />} />
+
 
             {/* Practice Problem Routes */}
 
