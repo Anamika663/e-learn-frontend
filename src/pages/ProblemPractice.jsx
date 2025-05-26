@@ -6,9 +6,13 @@ export default function Practice() {
     
 
   const[hide,setHide] = useState(false);
+  const[is,setId] = useState(1);
+  
   const toggle = ()=>{
      setHide(!hide);
   }
+
+
 
   return (
     <div className="flex min-h-screen">
