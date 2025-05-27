@@ -20,6 +20,8 @@ import Html from './roadmapPages/html';
 import CSS from './roadmapPages/CSS';
 import DSA from './PPpages/Dsa';
 import Sql from './PPpages/Sql.';
+import Gate from './roadmapPages/gate'
+
 
 
 // Component to wrap and conditionally render layout
@@ -51,6 +53,7 @@ function LayoutWrapper() {
             <Route path="/roadmap/frontend" element={<Frontendwebdev/>} />
             <Route path="/roadmap/backend" element={<Backendwebdev />} />
             <Route path="/roadmap/Webdev" element={<Webdev />} />
+            <Route path="/roadmap/gate" element={<Gate />} />
 
 
             {/* Practice Problem Routes */}

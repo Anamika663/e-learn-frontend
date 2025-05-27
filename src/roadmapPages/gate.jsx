@@ -1,63 +1,52 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const steps = [
   {
     id: "01",
-    title: "Learn any object oriented programming language",
+    title: "Interoduction to Gate",
     details: [
-      "How compiler work",
-      "basic syntax selcted programming language",
-      "Learn how Collections work"
+      "Know about Gate",
+      "opportunityes after the gate exam",
+      "get the syllabus of Gate"
     ],
     color: "from-green-400 to-green-600"
   },
   {
     id: "02",
-    title: "Learn about some basic Linear DataStructure",
-    details: ["Array","LinkedList","String","Stack","Queue"],
+    title: "What is approch to complete subject",
+    details: ["complete the subject compltetely accoring to syllabus","solve the DPP or solve prcatice sets","revise in each two monthes"],
     color: "from-teal-400 to-teal-600"
   },
   {
     id: "03",
-    title: "Learn about some basic non-Linear DataStructure",
-    details: ["Tree","Graph"],
+    title: "Time to compelete the syllabus of gate",
+    details: ["try to cover the syllabus till septempber"],
     color: "from-blue-400 to-blue-600"
   },
   {
     id: "04",
-    title: "Learn some advance non-Linear DataStructure",
-    details: ["Binary tree","AVL tree","Heap","DisjointSetUnion"],
+    title: "what do after the compeltion of the syllabus",
+    details: ["solve more and more problems","revise each subject atleat 3-4 times","take a testSeries and start attempting the tests","make the sort notes of every subject","solve the pyqs"],
     color: "from-indigo-400 to-indigo-600"
   },
   {
     id: "05",
-    title: "Learn Basic some Algorithm on Linear datastructure",
-    details: ["Linear Search", "treversal", "Insertion on LinkedList","Deletion on LinkedList","Two pointer"],
+    title: "ways to do the subject revise",
+    details: ["take the pyq and start sloving", "revise theory if you are making mistake on pyqs"],
     color: "from-purple-400 to-purple-600"
   },
   {
     id: "06",
-    title: "Learn some adance Algorithm on LinearDataStructure",
-    details: ["Binary Search", "Dynamic Programing", "greedy","sliding window algo"],
+    title: "How to make sort notes",
+    details: ["Don't make short notes on first revision", "first do two or three revision then make the sort notes"],
     color: "from-pink-400 to-pink-600"
   },
   {
     id: "07",
-    title: "Learn Algorithm on Tree",
-    details: ["inorder traversal","preorder traversal","post traversal","level order traversal","insertion on tree","deletion on tree","heapyfy"],
+    title: "How to attempt the tests",
+    details: ["befor attempting the test first revise all subject fromt sortnotes","After the attempting the test mark down the mistakes","make a chart in which you note down your test marks"],
     color: "from-yellow-400 to-yellow-600"
-  },
-  {
-    id: "08",
-    title: "Learn algorithm on Graph",
-    details: ["DFS","BFS","topological sort"],
-    color: "from-indigo-400 to-indigo-600"
-  },
-  {
-    id: "10",
-    title: "Learn some advance Algorithm",
-    details: ["DisjointSetUnion","DP"],
-    color: "from-green-400 to-green-600"
   }
 ];
 
@@ -65,7 +54,7 @@ export default function Roadmap() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 px-6 py-10">
       <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
-        E-Learn DataStructure and Algorithm Roadmap
+        E-Learn Developer Roadmap
       </h1>
 
       <div className="relative max-w-5xl mx-auto">
