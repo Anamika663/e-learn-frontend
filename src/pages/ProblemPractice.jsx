@@ -27,16 +27,23 @@ export default function Practice() {
 
   return (
     <div className="flex min-h-screen">
-      
-      {/* Side Navbar */}
-      <aside className="w-64 bg-gray-800 text-gray-200 p-4 space-y-3 start-2">
-        <h2 className="text-xl font-bold mb-4">Problems</h2>
-        <ul className="space-y-2">
-          <li><div  
-            onClick={toggle}
-          className="hover:text-white cursor-pointer border rounded border-gray-500 text-red-100  flex pl-5">Datastructure and Algo</div></li>
-          <div className={`min-h-32 in-w-48 flex flex-col pl-5 gap-y-1  text-sm ${!hide && "hidden"}`}>
-
+      {/* Sidebar */}
+      <aside className="w-64 bg-gray-800 text-gray-200 p-4 space-y-3 h-screen overflow-y-auto sticky top-0">
+    <h2 className="text-xl font-bold mb-4">Problems</h2>
+    <ul className="space-y-2">
+      <li>
+        <div
+          onClick={toggle}
+          className="hover:text-white cursor-pointer border rounded border-gray-500 text-red-100 flex pl-5"
+        >
+          Datastructure and Algo
+        </div>
+      </li>
+      <div
+        className={`min-h-32 w-48 flex flex-col pl-5 gap-y-1 text-sm ${
+          !hide && "hidden"
+        }`}
+      >
           {/* <div className="text-white cursor-pointer " id="0"  
            onClick={handleListing}
           >
