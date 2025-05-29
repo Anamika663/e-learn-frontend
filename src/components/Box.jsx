@@ -15,6 +15,7 @@ function Box({content,link,difc}) {
     color = "bg-red-300"
     text = "text-red-500"
   }
+  
   return (
      <div className='flex items-center justify-between bg-gray-700 min-h-16 border rounded-2xl shadow-lg'>
        <div className='text-white pl-4'>

@@ -1,12 +1,29 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
+
+
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const hadlelogout = ()=>{
+    localStorage.clear();
+    navigate('/')
+  }
+  
+  
+  
+  const isAccess = (window.localStorage.length == 0?false:true)
+  
+  
+  
+  
 
   useEffect(() => setOpen(false), [location]);
 
@@ -67,8 +84,9 @@ export default function NavBar() {
 
   
         <div className="hidden md:flex items-center gap-4">
-          <Link className={linkClasses('/login')} to="/login">Login</Link>
-          <Link className={linkClasses('/signup')} to="/signup">Signup</Link>
+         {!isAccess && <Link className={linkClasses('/login')} to="/login">Login</Link>}
+         {!isAccess && <Link className={linkClasses('/signup')} to="/signup">Signup</Link>}
+         {isAccess && <button onClick={hadlelogout}>Logout</button>}
           <button
             onClick={toggleTheme}
             className="ml-3 px-3 py-1 rounded bg-gray-700 text-sm hover:bg-gray-600"
