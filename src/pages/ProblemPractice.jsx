@@ -12,8 +12,7 @@ export default function Practice() {
     // setId(e.target.id)
     console.log(e.target.id);
     setId(e.target.id);
-    
-  })
+   })
 
   useEffect(()=>{
     toggle();
