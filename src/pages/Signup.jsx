@@ -49,7 +49,7 @@ export default function Signup() {
         login(email,password)
      })
      .catch((err)=>{
-        alert("user with username or emial already exist")
+        alert("user with username or email already exist")
         console.log(err);
      })
   }
