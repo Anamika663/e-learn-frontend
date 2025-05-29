@@ -36,7 +36,7 @@ export default function Practice() {
           onClick={toggle}
           className="hover:text-white cursor-pointer border rounded border-gray-500 text-red-100 flex pl-5"
         >
-          Datastructure and Algo
+          Practice problems
         </div>
       </li>
       <div
