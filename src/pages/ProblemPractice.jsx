@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import problems from '../data/problems.js'
+import DSAproblems from '../data/problems.js'
+import SQLProblems from '../data/sqlProblems.js'
 import Box from '../components/Box.jsx'
 
 export default function Practice() {
@@ -8,6 +9,8 @@ export default function Practice() {
   const[hide,setHide] = useState(false);
   const[hide2,setHide2] = useState(false);
   const[id,setId] = useState(4);
+  const[problems,setProblem] = useState(DSAproblems);
+  
   const[ref,setRef] = useState(false);
 
   const handleListing1 = ((e)=>{
@@ -16,6 +19,7 @@ export default function Practice() {
     setId(e.target.id);
      setRef(!ref);
      setHide(!hide)
+     setProblem(DSAproblems);
    })
   const handleListing2 = ((e)=>{
     // setId(e.target.id)
@@ -23,6 +27,7 @@ export default function Practice() {
     setId(e.target.id);
      setRef(!ref);
      setHide2(!hide2)
+     setProblem(SQLProblems)
    })
 
   useEffect(()=>{
