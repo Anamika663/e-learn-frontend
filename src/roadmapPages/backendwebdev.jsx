@@ -20,15 +20,15 @@ const steps = [
   },
   {
     id: "03",
-    title: "Authentication + APIs",
-    details: ["JWT login", "API integration", "Token handling"],
-    color: "from-purple-400 to-purple-600"
-  },
-  {
-    id: "04",
     title: "Backend Basics",
     details: ["Node.js", "Express", "MongoDB"],
     color: "from-pink-400 to-pink-600"
+  },
+  {
+    id: "04",
+    title: "Authentication + APIs",
+    details: ["JWT login", "API integration", "Token handling"],
+    color: "from-purple-400 to-purple-600"
   },
   {
     id: "05",

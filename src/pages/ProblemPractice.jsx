@@ -43,11 +43,6 @@ export default function Practice() {
           !hide && "hidden"
         }`}
       >
-          {/* <div className="text-white cursor-pointer " id="0"  
-           onClick={handleListing}
-          >
-             School
-          </div> */}
 
           <div className="text-white cursor-pointer hover:bg-yellow-100 hover:text-black rounded-xl max-w-32 pl-8" id="1"
           onClick={handleListing}

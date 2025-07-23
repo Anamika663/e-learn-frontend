@@ -9,14 +9,13 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {/* Brand / Intro */}
         <div>
-          <h2 className="text-xl font-semibold text-white mb-2">📚 E-Learn</h2>
+          <h2 className="text-xl font-semibold text-white mb-2">📚 Roadflix</h2>
           <p className="text-sm leading-relaxed">
             Learn from the best, anytime and anywhere.
           </p>
 
-          {/* Social Icons */}
+         
           <div className="flex gap-4 mt-4 text-xl">
             <a href="#" aria-label="GitHub"><FaGithub /></a>
             <a href="#"><FaLinkedin /></a>
@@ -24,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Navigation Links */}
+       
         <div>
           <h3 className="text-lg font-semibold text-white mb-2">Navigation</h3>
           <ul className="space-y-1">
@@ -34,7 +33,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Legal Links */}
+        
         <div>
           <h3 className="text-lg font-semibold text-white mb-2">Legal</h3>
           <ul className="space-y-1">
@@ -45,7 +44,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      
       <div className="border-t border-gray-700 py-4">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
           <span>© {new Date().getFullYear()} MySite. All rights reserved.</span>
