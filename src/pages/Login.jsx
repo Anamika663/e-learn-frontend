@@ -62,7 +62,7 @@ export default function Login() {
               onChange={(e)=>{
                 setPassword(e.target.value)
               }}
-              // type="password"
+              
               placeholder="Enter your password"
               className="mt-2 rounded-lg bg-gray-700 p-2 text-white focus:border-indigo-500 focus:ring-indigo-500 focus:outline-none"
             />

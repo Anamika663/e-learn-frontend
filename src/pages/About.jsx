@@ -4,15 +4,15 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white px-6 py-12">
       <div className="max-w-5xl mx-auto space-y-8">
-        {/* Heading */}
+        
         <h1 className="text-4xl font-bold text-indigo-500">About Roadflix</h1>
 
-        {/* Intro */}
+        
         <p className="text-lg text-gray-300">
           <span className="text-white font-semibold">Roadflix</span> is a modern e-learning platform built for students, self-learners, and aspiring professionals. We offer a guided and structured learning experience through curated roadmaps, playlists, and practical coding challenges — all in one place.
         </p>
 
-        {/* What We Offer */}
+        
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">What We Offer</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-300">
@@ -24,7 +24,7 @@ const About = () => {
           </ul>
         </div>
 
-        {/* Why Roadflix */}
+        
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">Why Roadflix?</h2>
           <p className="text-gray-300">
@@ -32,7 +32,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* How It Works */}
+        
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">How It Works</h2>
           <p className="text-gray-300">
@@ -40,7 +40,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Tech Stack */}
+        
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">Built With </h2>
           <p className="text-gray-300">
@@ -48,7 +48,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Who It's For */}
+        
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">Who Is It For?</h2>
           <p className="text-gray-300">
@@ -56,7 +56,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Mission */}
+       
         <div>
           <h2 className="text-2xl font-semibold text-indigo-500 mb-2">Our Mission</h2>
           <p className="text-gray-300">

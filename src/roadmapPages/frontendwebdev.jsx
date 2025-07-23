@@ -6,40 +6,114 @@ const steps = [
     id: "01",
     title: "Intro to Web Development",
     details: [
-      "How websites work",
-      "Frontend vs Backend",
-      "Code editors (VS Code)"
+      {
+        text: "How websites work",
+        link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM"
+      },
+      {
+        text: "Frontend vs Backend",
+        link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM"
+      },
+      {
+        text: "Code editors (VS Code)",
+        link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM"
+      }
     ],
     color: "from-green-400 to-green-600"
   },
   {
     id: "02",
     title: "Basic Frontend",
-    details: ["HTML", "CSS", "JavaScript"],
+    details: [
+      {
+        text: "HTML",
+        link: "https://www.youtube.com/watch?v=BsDoLVMnmZs"
+      },
+      {
+        text: "CSS",
+        link: "https://www.youtube.com/watch?v=MSICFljRcb4"
+      },
+      {
+        text: "JavaScript",
+        link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM"
+      }
+    ],
     color: "from-teal-400 to-teal-600"
   },
   {
     id: "03",
     title: "Tools",
-    details: ["Git & GitHub", "NPM", "VS Code"],
+    details: [
+      {
+        text: "Git & GitHub",
+        link: "https://www.youtube.com/watch?v=tJ5Yfw183pI"
+      },
+      {
+        text: "NPM",
+        link: "https://www.youtube.com/watch?v=QWRYPiwhKW0"
+      },
+      {
+        text: "VS Code",
+        link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM"
+      }
+    ],
     color: "from-blue-400 to-blue-600"
   },
   {
     id: "04",
     title: "Frontend Frameworks",
-    details: ["React + Vite", "Tailwind CSS", "React Router"],
+    details: [
+      {
+        text: "React + Vite",
+        link: "https://www.youtube.com/watch?v=xJ5e1Okx7eE"
+      },
+      {
+        text: "Tailwind CSS",
+        link: "https://www.youtube.com/watch?v=6gvGLgi_6bw"
+      },
+      {
+        text: "React Router",
+        link: "https://www.youtube.com/watch?v=6gvGLgi_6bw"
+      }
+    ],
     color: "from-indigo-400 to-indigo-600"
   },
   {
     id: "05",
     title: "Authentication + APIs",
-    details: ["JWT login", "API integration", "Token handling"],
+    details: [
+      {
+        text: "JWT login",
+        link: "https://www.youtube.com/watch?v=QWRYPiwhKW0"
+      },
+      {
+        text: "API integration",
+        link: "https://www.youtube.com/watch?v=QWRYPiwhKW0"
+      },
+      {
+        text: "Token handling",
+        link: "https://www.youtube.com/watch?v=QWRYPiwhKW0"
+      }
+    ],
     color: "from-purple-400 to-purple-600"
   },
   {
     id: "06",
     title: "Projects & Deployment",
-    details: ["Build & deploy projects", "Vercel/Render", "Resume-ready"],
+    details: [
+      {
+        text: "Build & deploy projects",
+        link: "https://www.youtube.com/watch?v=xJ5e1Okx7eE"
+      },
+      {
+        text: "Vercel/Render",
+        link: "https://www.youtube.com/watch?v=xJ5e1Okx7eE"
+      },
+      {
+        text: "Resume‑ready",
+        link: "https://www.youtube.com/watch?v=xJ5e1Okx7eE"
+      }
+    ],
     color: "from-yellow-400 to-yellow-600"
   }
 ];
@@ -75,12 +149,21 @@ export default function FrontendWebDev() {
 
                 {/* Content Card */}
                 <div className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-2/3">
-                  <h2 className="text-x2 font-semibold text-gray-800 dark:text-white mb-2">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                     {step.title}
                   </h2>
-                  <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm">
+                  <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1">
                     {step.details.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i}>
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline hover:text-indigo-500 transition-colors"
+                        >
+                          {item.text}
+                        </a>
+                      </li>
                     ))}
                   </ul>
                 </div>

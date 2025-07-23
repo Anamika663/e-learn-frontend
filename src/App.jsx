@@ -24,7 +24,7 @@ import Gate from './roadmapPages/gate'
 
 
 
-// Component to wrap and conditionally render layout
+
 function LayoutWrapper() {
   const location = useLocation();
   const hideLayout = location.pathname === '/' || location.pathname === '/about' || location.pathname === '/roadmap' || location.pathname === '/problemPractice';

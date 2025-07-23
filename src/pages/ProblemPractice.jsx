@@ -14,7 +14,7 @@ export default function Practice() {
   const[ref,setRef] = useState(false);
 
   const handleListing1 = ((e)=>{
-    // setId(e.target.id)
+    
     console.log(e.target.id);
     setId(e.target.id);
      setRef(!ref);
@@ -22,7 +22,7 @@ export default function Practice() {
      setProblem(DSAproblems);
    })
   const handleListing2 = ((e)=>{
-    // setId(e.target.id)
+    
     console.log(e.target.id);
     setId(e.target.id);
      setRef(!ref);
@@ -31,7 +31,7 @@ export default function Practice() {
    })
 
   useEffect(()=>{
-    // toggle1();
+    
   },[ref])
   
   const toggle1 = ()=>{

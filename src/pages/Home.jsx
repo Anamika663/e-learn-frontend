@@ -22,14 +22,14 @@ export default function Home() {
     if (!isLoggedIn) {
       navigate("/login");
     } else {
-      // Redirect to roadmap or dashboard if already logged in
+      
       navigate("/roadmap");
     }
   };
 
   return (
     <>
-      {/* Hero Section */}
+      
       <motion.div
         className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-800 px-6 py-12 gap-8"
         variants={pageVariants}
@@ -52,7 +52,7 @@ export default function Home() {
             A smarter way to learn technology — roadmaps, playlists, practice, and hands-on knowledge.
           </p>
 
-          {/* Show button only if not logged in */}
+          
           {!isLoggedIn && (
             <button
               onClick={handleGetStarted}
@@ -77,7 +77,7 @@ export default function Home() {
         </motion.div>
       </motion.div>
 
-      {/* 🚀 Roadmap and Practice Cards */}
+     
       <section className="bg-gray-900 py-12 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <motion.div
